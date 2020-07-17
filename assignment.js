@@ -25,15 +25,14 @@ console.log(woodResult);
 //Here I am gonna define tiny friend name
 
 function tinyFriend(names){
-    var smallest = names[0];
-    for(var i = 1 ; i < names.length; i++){
-        var currentNumber = smallest[i];
-        if( currentNumber > smallest){
-            smallest = 'Ema';
+    var smallest = names[0].length;
+    for(var i = 0 ; i < names.length; i++){
+        var currentNumber = names[i].length;
+        if( currentNumber < smallest){
+            smallest = currentNumber
         }
     }
     return smallest;
 }
 var result = tinyFriend(['Alve', 'Sojun', 'Jadeed', 'Ema']);
 console.log(result);
-
