@@ -18,7 +18,7 @@ function woodCalculator(chair, table, bed){
     var totalWood = chairNumber + tableNumber + bedNumber;
     return totalWood;
 }
-var woodResult = woodCalculator(12, 5, 3);
+var woodResult = woodCalculator(12, 5, 3); //ADD three values to calculate Wood numbers
 console.log(woodResult);
 
 
